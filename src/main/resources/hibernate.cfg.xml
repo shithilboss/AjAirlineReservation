@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/airlinereservationsystem?zeroDateTimeBehavior=convertToNull</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">1234</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class="bd.ac.seu.my.airlinereservationsys.model.Airline"/>
+        <mapping class="bd.ac.seu.my.airlinereservationsys.model.Airport"/>
+        <mapping class="bd.ac.seu.my.airlinereservationsys.model.AvailableFlight"/>
+        <mapping class="bd.ac.seu.my.airlinereservationsys.model.Booking"/>
+        <mapping class="bd.ac.seu.my.airlinereservationsys.model.BookingClass"/>
+        <mapping class="bd.ac.seu.my.airlinereservationsys.model.BookingStatus"/>
+        <mapping class="bd.ac.seu.my.airlinereservationsys.model.City"/>
+        <mapping class="bd.ac.seu.my.airlinereservationsys.model.Customer"/>
+        <mapping class="bd.ac.seu.my.airlinereservationsys.model.Email"/>
+        <mapping class="bd.ac.seu.my.airlinereservationsys.model.Fax"/>
+        <mapping class="bd.ac.seu.my.airlinereservationsys.model.Flight"/>
+        <mapping class="bd.ac.seu.my.airlinereservationsys.model.Phone"/>
+        <mapping class="bd.ac.seu.my.airlinereservationsys.model.User"/>
+    </session-factory>
+</hibernate-configuration>
